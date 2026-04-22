@@ -1,6 +1,13 @@
 # QuickFacepunchSteamworksSetup
 
-CREDITS GO TO @pixelfizz1718 https://www.youtube.com/@pixelfizz1718 FOR PROVIDING THE TUTORIAL. PART 1 of the Tutorial: https://www.youtube.com/watch?v=kBgnIJUfQak&t=723s PART 2 of the Tutorial: https://www.youtube.com/watch?v=0QPIhCFWkAM&t=819s.
+CREDITS GO TO @pixelfizz1718 https://www.youtube.com/@pixelfizz1718 FOR PROVIDING THE TUTORIAL. PART 1 of the Tutorial: https://www.youtube.com/watch?v=kBgnIJUfQak&t=723s PART 2 of the Tutorial: https://www.youtube.com/watch?v=0QPIhCFWkAM&t=819s. Honourable mention: MrRobinOfficial https://www.youtube.com/watch?v=9CYsQ2Rsr2c.
 
-I always wanted to quickly test my multiplayer game with others through steam, but there was no quick solution. So I found pixelfizz1718's tutorials and manually wrote the code in a unity project and was able to use steam lobbies with Unity's netcode solution, Netcode for Gameobjects!
+Now, let me be **clear**. This is just to be able to connect with friends/playtesters through steam and play your multiplayer game for **prototyping** **purposes**! Yes, when you build and upload your Unity game using SteamPipe, Steam and Steam overlay will work (obviously you need to configure the launch settings in the steamworks page in order for your game to launch correctly when you press PLAY on Steam). How do you join/invite? Well, you must press SHIFT+TAB and right click on the friend you WANT to invite with access to your GAME, then press "Invite to Game". IMPORTANT: If you want to expand and understand how the scripts inside work, you **must** check out pixelfizz1718 tutorials, and for good measure, MrRobinOfficial's as well!
 
+IMPORTANT: These scripts were written with Unity 6000.71f1 and Netcode for Gameobjects version 1.15.1, I have NOT tested them with Netcode for Gameobjects version 2.0-2.11.
+
+**How to Implement:** Make sure you install Netcode for Gameobjects 1.15.1, then using the package manager -> Add package from git URL: https://github.com/Unity-Technologies/multiplayer-community-contributions.git?path=/Transports/com.community.netcode.transport.facepunch This adds the option to use the "FacepunchTransport" inside NetworkManager.
+
+
+
+There is no license, do whatever you want with this.
